@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Bold";
+  src: url(../assets/fonts/NotoSans-Bold.ttf);
+  font-family: "Semi-Bold";
+  src: url(../assets/fonts/NotoSans-SemiBold.ttf);
+  font-family: "Regular";
+  src: url(../assets/fonts/NotoSans-Regular.ttf); }
+
+p {
+  font-family: Regular; }
+
+a {
+  font-family: Regular; }
+
+#headerUno {
+  background-color: #091113; }
+  #headerUno nav div div .cardHeader {
+    background-color: transparent !important; }
+  #headerUno nav div div ul li i {
+    color: #FFFFFF; }
+  #headerUno nav div div ul li .nav-link {
+    color: #FFFFFF !important;
+    font-size: 0.85rem;
+    margin-top: 0.5rem; }
+  #headerUno nav div div ul .iconoUsuario {
+    margin-top: 0.85rem; }
+  #headerUno nav div .wpp div div div .whatsapp {
+    color: #FFFFFF !important; }
+  #headerUno nav div .wpp div div div div .card-text {
+    color: #FFFFFF !important;
+    margin-bottom: 0rem !important; }
+  #headerUno nav div .buscar form input {
+    border-radius: 0% !important; }
+  #headerUno nav div .buscar form input:focus {
+    outline: none;
+    box-shadow: none; }
+
+#headerDos {
+  background-color: #000000; }
+  #headerDos div div .categorias {
+    background-color: #0074bd;
+    padding-right: 0% !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    font-size: 0.95rem !important; }
+    #headerDos div div .categorias .dropdown-toggle {
+      color: #ffffff; }
+  #headerDos div div .navbarSecciones {
+    padding: 0% !important; }
+    #headerDos div div .navbarSecciones nav {
+      display: flex;
+      justify-content: center; }
+      #headerDos div div .navbarSecciones nav ul .itemsSecciones {
+        margin-right: 1.8rem !important; }
+      #headerDos div div .navbarSecciones nav ul .nav-item .nav-link {
+        color: #FFFFFF !important;
+        font-size: 0.95rem;
+        padding-top: 4px !important;
+        padding-bottom: 4px !important; }
+        #headerDos div div .navbarSecciones nav ul .nav-item .nav-link .links {
+          text-decoration: none !important;
+          color: #FFFFFF !important; }
+        #headerDos div div .navbarSecciones nav ul .nav-item .nav-link .links:hover {
+          color: #0074bd !important; }
+  #headerDos div div .carrito {
+    display: flex;
+    justify-content: end; }
+    #headerDos div div .carrito a {
+      color: #FFFFFF;
+      opacity: 90%;
+      text-decoration: none !important; }
+
+#carousel {
+  padding: 0%; }
+
+#main div {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem; }
+  #main div div h2 {
+    color: #0074bd; }
+
+#main .navCarrito div ul li .numeroNavCarrito {
+  color: #0074bd !important;
+  font-size: 3rem;
+  padding-right: 0%; }
+
+#main .navCarrito div ul .textoNavCarrito {
+  margin-top: 1.4rem;
+  padding-left: 0%; }
+  #main .navCarrito div ul .textoNavCarrito .nav-link {
+    color: grey;
+    font-size: 1.1rem;
+    padding-left: 0.8rem;
+    margin-right: 1.2rem; }
+
+#main .navCarrito div ul .opacidadNavCarrito .nav-link {
+  opacity: 40%; }
+
+#main .navCarrito div ul .opacidadNavCarrito .nav-link:focus {
+  opacity: 100%; }
+
+#main #titulosProductosNuevos div h4 {
+  color: #0074bd; }
+
+#main #productosNuevos div div .card div p {
+  font-size: 0.8rem; }
+
+#main #productosNuevos div div .card div h6 {
+  font-size: 1.05rem !important;
+  color: #d7292b; }
+
+#main #productosNuevos div div .card .card-footer {
+  background-color: transparent; }
+  #main #productosNuevos div div .card .card-footer .btn {
+    background-color: #0074bd;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    padding: 0.5rem 1.5rem; }
+
+#footer {
+  background-color: #091113 !important;
+  padding-top: 1.65rem !important;
+  padding-bottom: 1.65rem !important; }
+  #footer div div .cardFooter div .card-text {
+    color: grey;
+    font-size: 0.85rem;
+    margin-bottom: 0%; }
+  #footer .navegadorFooter div nav .breadcrumb .breadcrumb-item a {
+    color: #FFFFFF !important;
+    font-size: 0.85rem !important;
+    text-decoration: none; }
+
+@media only screen and (max-width: 991.98px) {
+  #headerUno nav div .wpp {
+    display: none !important; }
+  #headerDos div div .navbarSecciones {
+    display: none !important; } }
+
+@media only screen and (max-width: 767.98px) {
+  #headerUno nav div .logo div {
+    display: flex;
+    justify-content: center; }
+  #headerUno nav div .wpp {
+    display: none !important; } }
