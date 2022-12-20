@@ -7,4 +7,13 @@
     a {
         font-family: map-get($fuentes, "regular");
     }
+
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+    }
+
 }

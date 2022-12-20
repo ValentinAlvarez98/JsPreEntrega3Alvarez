@@ -1,5 +1,5 @@
 @mixin main {
-    #main {
+    main {
         div {
             margin-top: 1rem*0.75;
             margin-bottom: 1rem*0.75;
@@ -10,44 +10,9 @@
                 }
             }
         }
+    }
 
-        .navCarrito {
-            div {
-                ul {
-                    li {
-                        .numeroNavCarrito {
-                            color: map-get($paletaDeColores, "azul") !important;
-                            font-size: 1rem*3;
-                            padding-right: 0%;
-                        }
-                    }
-
-                    .textoNavCarrito {
-                        margin-top: 1rem*1.4;
-                        padding-left: 0%;
-
-                        .nav-link {
-                            color: map-get($paletaDeColores, "gris");
-                            font-size: 1rem*1.1;
-                            padding-left: 1rem*0.8;
-                            margin-right: 1rem*1.2;
-                        }
-
-                    }
-
-                    .opacidadNavCarrito {
-                        .nav-link {
-                            opacity: 40%;
-                        }
-
-                        .nav-link:focus {
-                            opacity: 100%;
-                        }
-                    }
-
-                }
-            }
-        }
+    #mainIndex {
 
         #titulosProductosNuevos {
             div {
@@ -86,6 +51,103 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    #mainCarrito {
+        .navCarrito {
+            div {
+                ul {
+                    li {
+                        .numeroNavCarrito {
+                            color: map-get($paletaDeColores, "azul") !important;
+                            font-size: 1rem*3;
+                            padding-right: 0%;
+                        }
+                    }
+
+                    .textoNavCarrito {
+                        margin-top: 1rem*1.4;
+                        padding-left: 0%;
+
+                        .nav-link {
+                            color: map-get($paletaDeColores, "gris");
+                            font-size: 1rem*1.1;
+                            padding-left: 1rem*0.8;
+                            margin-right: 1rem*1.2;
+                        }
+
+                    }
+
+                    .opacidadNavCarrito {
+                        .nav-link {
+                            opacity: 40%;
+                        }
+
+                        .nav-link:focus {
+                            opacity: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    #mainLogin {
+        div {
+            div {
+                h2 {
+                    color: map-get($paletaDeColores, "negro");
+                }
+
+                #login {
+                    div {
+                        div {
+                            div {
+                                form {
+                                    div {
+
+                                        input,
+                                        select {
+                                            font-size: 1rem*0.8;
+                                            padding: 1rem*0.85 1rem;
+                                        }
+
+                                        input:focus,
+                                        select:focus {
+                                            border-color: map-get($paletaDeColores, "azul");
+                                            border-width: 1rem*0.14;
+                                            border-radius: 1rem*0.2 !important;
+                                            box-shadow: none !important;
+                                        }
+
+                                        .btn {
+                                            padding: 1rem 1rem*1.5;
+                                            font-size: 1rem;
+                                        }
+                                    }
+
+                                    p {
+                                        font-size: 1rem*0.8;
+                                        color: red;
+                                    }
+
+                                    .aclaraciones {
+                                        font-size: 1rem*0.8;
+                                        color: map-get($paletaDeColores, "gris");
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .animate__animated .animate__flipInX {
+                        animation-duration: 0.5s;
+                    }
+
                 }
             }
         }

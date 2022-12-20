@@ -12,6 +12,12 @@ p {
 a {
   font-family: Regular; }
 
+.hidden {
+  display: none; }
+
+.visible {
+  display: block; }
+
 #headerUno {
   background-color: #091113; }
   #headerUno nav div div .cardHeader {
@@ -73,49 +79,79 @@ a {
 #carousel {
   padding: 0%; }
 
-#main div {
+main div {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem; }
-  #main div div h2 {
+  main div div h2 {
     color: #0074bd; }
 
-#main .navCarrito div ul li .numeroNavCarrito {
+#mainIndex #titulosProductosNuevos div h4 {
+  color: #0074bd; }
+
+#mainIndex #productosNuevos div div .card div p {
+  font-size: 0.8rem; }
+
+#mainIndex #productosNuevos div div .card div h6 {
+  font-size: 1.05rem !important;
+  color: #d7292b; }
+
+#mainIndex #productosNuevos div div .card .card-footer {
+  background-color: transparent; }
+  #mainIndex #productosNuevos div div .card .card-footer .btn {
+    background-color: #0074bd;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    padding: 0.5rem 1.5rem; }
+
+#mainCarrito .navCarrito div ul li .numeroNavCarrito {
   color: #0074bd !important;
   font-size: 3rem;
   padding-right: 0%; }
 
-#main .navCarrito div ul .textoNavCarrito {
+#mainCarrito .navCarrito div ul .textoNavCarrito {
   margin-top: 1.4rem;
   padding-left: 0%; }
-  #main .navCarrito div ul .textoNavCarrito .nav-link {
+  #mainCarrito .navCarrito div ul .textoNavCarrito .nav-link {
     color: grey;
     font-size: 1.1rem;
     padding-left: 0.8rem;
     margin-right: 1.2rem; }
 
-#main .navCarrito div ul .opacidadNavCarrito .nav-link {
+#mainCarrito .navCarrito div ul .opacidadNavCarrito .nav-link {
   opacity: 40%; }
 
-#main .navCarrito div ul .opacidadNavCarrito .nav-link:focus {
+#mainCarrito .navCarrito div ul .opacidadNavCarrito .nav-link:focus {
   opacity: 100%; }
 
-#main #titulosProductosNuevos div h4 {
-  color: #0074bd; }
+#mainLogin div div h2 {
+  color: #000000; }
 
-#main #productosNuevos div div .card div p {
-  font-size: 0.8rem; }
+#mainLogin div div #login div div div form div input,
+#mainLogin div div #login div div div form div select {
+  font-size: 0.8rem;
+  padding: 0.85rem 1rem; }
 
-#main #productosNuevos div div .card div h6 {
-  font-size: 1.05rem !important;
-  color: #d7292b; }
+#mainLogin div div #login div div div form div input:focus,
+#mainLogin div div #login div div div form div select:focus {
+  border-color: #0074bd;
+  border-width: 0.14rem;
+  border-radius: 0.2rem !important;
+  box-shadow: none !important; }
 
-#main #productosNuevos div div .card .card-footer {
-  background-color: transparent; }
-  #main #productosNuevos div div .card .card-footer .btn {
-    background-color: #0074bd;
-    color: #FFFFFF;
-    font-size: 0.95rem;
-    padding: 0.5rem 1.5rem; }
+#mainLogin div div #login div div div form div .btn {
+  padding: 1rem 1.5rem;
+  font-size: 1rem; }
+
+#mainLogin div div #login div div div form p {
+  font-size: 0.8rem;
+  color: red; }
+
+#mainLogin div div #login div div div form .aclaraciones {
+  font-size: 0.8rem;
+  color: grey; }
+
+#mainLogin div div #login .animate__animated .animate__flipInX {
+  animation-duration: 0.5s; }
 
 #footer {
   background-color: #091113 !important;
