@@ -38,7 +38,7 @@ function ingreso() {
             
             [usuarioExiste.emailUsuario === usuarioAIngresar.emailUsuario && usuarioExiste.passwordUsuario === usuarioAIngresar.passwordUsuario ?
 
-                [usuarioActivo.push(usuarioExiste), sessionStorage.setItem('Usuario Activo', JSON.stringify(usuarioActivo)), ocultarTodoLogin(), sesion(), location.href = '/pages/miCuenta.html'] :
+                [usuarioActivo.push(usuarioExiste), sessionStorage.setItem('Usuario Activo', JSON.stringify(usuarioActivo)), ocultarTodoLogin(), sesion(), location.href = 'JsPreEntrega3Alvarez/pages/miCuenta.html'] :
                 
                 [ocultarTodoLogin(), incorrectosInicio.classList.remove('hidden')]] :
             
@@ -156,9 +156,9 @@ function ejecutarConEnter() {
 
 function ingresarORegistro() {
 
-    window.location.pathname === '/pages/registro.html' ?
+    window.location.pathname === ('/pages/registro.html'  || '/JsPreEntrega3Alvarez/pages/registro.html') ?
         [ingresar.classList.add('hidden')] :
-        window.location.pathname === '/pages/ingreso.html' ?
+        window.location.pathname === ('/pages/ingreso.html'  || '/JsPreEntrega3Alvarez/pages/ingreso.html') ?
             [registrar.classList.add('hidden')] :
     null;
 
