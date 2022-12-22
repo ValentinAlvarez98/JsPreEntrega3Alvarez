@@ -139,6 +139,11 @@
                                         font-size: 1rem*0.8;
                                         color: map-get($paletaDeColores, "gris");
                                     }
+
+                                    label {
+                                        font-size: 1rem*1.05;
+                                        color: map-get($paletaDeColores, "azul");
+                                    }
                                 }
                             }
                         }

@@ -60,12 +60,29 @@
 
                                 </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Registro</a>
+                                <li class="nav-item hidden" id="bienvenido">
+                                    <p class="nav-link">Bienvenido/a</p>
                                 </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Ingresar</a>
+                                <li class="nav-item" id="registroHeader">
+                                    <a class="nav-link" href="./registro.html">Registro</a>
+                                </li>
+
+                                <li class="nav-item" id="ingresarHeader">
+                                    <a class="nav-link" href="./ingreso.html">Ingresar</a>
+                                </li>
+
+                                <li class="nav-item hidden" id="dropCuenta">
+                                    <div class="dropdown">
+                                        <p class="dropdown-toggle nav-link nombreCuenta" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        </p>
+                                        <ul class="dropdown-menu dropdown-menu-dark ">
+                                            <li><a class="dropdown-item " href="./miCuenta.html">MI CUENTA</a></li>
+                                            <li><a class="dropdown-item " id="cerrarSesion" href="#">SALIR</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
 
                             </ul>
@@ -403,7 +420,7 @@
 
 
 
-    <script src="../js/app.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
@@ -415,6 +432,8 @@
     <script>
         AOS.init()
     </script>
+    <script src="../js/app.js"></script>
+    <script src="../js/usuarios.js"></script>
 
 </body>
 

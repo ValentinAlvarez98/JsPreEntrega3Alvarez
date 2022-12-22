@@ -28,8 +28,17 @@ a {
     color: #FFFFFF !important;
     font-size: 0.85rem;
     margin-top: 0.5rem; }
+  #headerUno nav div div ul li .dropdown-item {
+    color: #0074bd !important;
+    font-size: 0.85rem;
+    border-bottom: 0.05rem solid grey !important; }
+  #headerUno nav div div ul li .nombreCuenta {
+    color: #0074bd !important;
+    font-size: 0.9rem; }
   #headerUno nav div div ul .iconoUsuario {
     margin-top: 0.85rem; }
+  #headerUno nav div div .dropdown-menu {
+    padding: 0.1rem; }
   #headerUno nav div .wpp div div div .whatsapp {
     color: #FFFFFF !important; }
   #headerUno nav div .wpp div div div div .card-text {
@@ -149,6 +158,10 @@ main div {
 #mainLogin div div #login div div div form .aclaraciones {
   font-size: 0.8rem;
   color: grey; }
+
+#mainLogin div div #login div div div form label {
+  font-size: 1.05rem;
+  color: #0074bd; }
 
 #mainLogin div div #login .animate__animated .animate__flipInX {
   animation-duration: 0.5s; }

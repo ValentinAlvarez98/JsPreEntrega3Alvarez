@@ -29,6 +29,17 @@
                                 font-size: 1rem*0.85;
                                 margin-top: 1rem*0.5;
                             }
+
+                            .dropdown-item {
+                                color: map-get($paletaDeColores, "azul") !important;
+                                font-size: 1rem*0.85;
+                                border-bottom: 1rem*0.05 solid map-get($paletaDeColores, "gris") !important;
+                            }
+
+                            .nombreCuenta {
+                                color: map-get($paletaDeColores, "azul") !important;
+                                font-size: 1rem*0.9;
+                            }
                         }
 
                         .iconoUsuario {
@@ -36,7 +47,13 @@
                         }
                     }
 
+                    .dropdown-menu {
+                        padding: 1rem*0.1;
+                    }
+
                 }
+
+
 
                 .wpp {
 
