@@ -1,9 +1,7 @@
-const bloque = document.querySelectorAll('.bloque');
-const btnAqui = document.querySelectorAll('.btnAqui');
-const mainLogin = document.querySelector('.mainDeLogin');
+
 const ingresar = document.querySelector('#ingresar');
 const registrar = document.querySelector('#registrar');
-const enter = document.querySelectorAll('.enter');
+
 
 
 function ingreso() {
@@ -38,7 +36,7 @@ function ingreso() {
             
             [usuarioExiste.emailUsuario === usuarioAIngresar.emailUsuario && usuarioExiste.passwordUsuario === usuarioAIngresar.passwordUsuario ?
 
-                [usuarioActivo.push(usuarioExiste), sessionStorage.setItem('Usuario Activo', JSON.stringify(usuarioActivo)), ocultarTodoLogin(), sesion(), location.href = '/JsPreEntrega3Alvarez/pages/miCuenta.html'] :
+                [usuarioActivo.push(usuarioExiste), sessionStorage.setItem('Usuario Activo', JSON.stringify(usuarioActivo)), ocultarTodoLogin(), sesion(), location.href = /* '/JsPreEntrega3Alvarez/pages/miCuenta.html' */'/pages/miCuenta.html'] :
                 
                 [ocultarTodoLogin(), incorrectosInicio.classList.remove('hidden')]] :
             
@@ -87,8 +85,6 @@ function registro() {
 
         
         let usuarioExiste = JSON.parse(localStorage.getItem(`${usuarioARegistrar.emailUsuario}`, usuarioARegistrar));
-        console.log(usuarioExiste);
-
 
         usuarioExiste === null ? 
             
@@ -119,34 +115,59 @@ function ocultarTodoLogin() {
 
 }
 
-function sesion () {
+function sesion() {
+
+    const nombreCuenta = document.querySelector('.nombreCuenta');
+    const eliminarCuenta = document.getElementById('eliminarCuenta');
 
     sessionStorage.getItem('Usuario Activo') !== null ?
         
-        [bienvenido.classList.remove('hidden'), registroHeader.classList.add('hidden'), ingresarHeader.classList.add('hidden'), dropCuenta.classList.remove('hidden')] :
+        [bienvenido.classList.remove('hidden'), registroHeader.classList.add('hidden'), ingresarHeader.classList.add('hidden'), dropCuenta.classList.remove('hidden'), nombreCuenta.innerHTML = JSON.parse(sessionStorage.getItem('Usuario Activo'))[0].emailUsuario] :
     
         [bienvenido.classList.add('hidden'), registroHeader.classList.remove('hidden'), ingresarHeader.classList.remove('hidden'), dropCuenta.classList.add('hidden')];
     
-    cerrarSesion();
+    
+    
+    function eliminarUsuario() {
+        
+        eliminarCuenta.addEventListener('click', () => {
+            usuarioAEliminar = JSON.parse(sessionStorage.getItem('Usuario Activo'))[0].emailUsuario;
+            console.log(usuarioAEliminar);
+            sessionStorage.removeItem('Usuario Activo');
+            localStorage.removeItem(usuarioAEliminar);
+            location.href = '/pages/registro.html' /* '/JsPreEntrega3Alvarez/pages/registro.html' */;
+        })
+
+    }
+    
     function cerrarSesion (){
         const cerrarSesion = document.getElementById('cerrarSesion');
         cerrarSesion.onclick = () => {
-        sessionStorage.removeItem('Usuario Activo');
+            sessionStorage.removeItem('Usuario Activo');
+            location.href = '/index.html' /* '/JsPreEntrega3Alvarez/index.html' */;
         sesion();
         }
     }
+
+    cerrarSesion();
+
+    eliminarCuenta !== null ?
+        eliminarUsuario() : null;
+
     
 }
 
 function ejecutarConEnter() {
+
+    const mainLogin = document.querySelector('.mainDeLogin');
+    const enter = document.querySelectorAll('.enter');
 
     [mainLogin !== null]?
 
     [enter.forEach((cadaEnter, i) => {
         enter[i].addEventListener('keyup', function (e) {
             ingresar.classList.contains('hidden') === false ?
-                e.keyCode === 13 ? ingreso() : null :
-                e.keyCode === 13 ? registro() : null;
+                e.keyCode === 13 ? ingreso() : registro : null;
         })
     })] :
 
@@ -156,9 +177,12 @@ function ejecutarConEnter() {
 
 function ingresarORegistro() {
 
-    window.location.pathname === ('/JsPreEntrega3Alvarez/pages/registro.html') ?
+    const bloque = document.querySelectorAll('.bloque');
+    const btnAqui = document.querySelectorAll('.btnAqui');
+
+    window.location.pathname === (/* '/JsPreEntrega3Alvarez/pages/registro.html' */ '/pages/registro.html') ?
         [ingresar.classList.add('hidden')] :
-        window.location.pathname === ('/JsPreEntrega3Alvarez/pages/ingreso.html') ?
+        window.location.pathname === (/* '/JsPreEntrega3Alvarez/pages/ingreso.html' */ '/pages/ingreso.html') ?
             [registrar.classList.add('hidden')] :
     null;
 
