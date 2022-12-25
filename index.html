@@ -313,6 +313,56 @@
 
     <main class="container" id="mainIndex">
 
+        <div class="text-center hidden" id="creadorProductos">
+            <div class="row justify-content-center pe-1 ps-1">
+                <div class="col-xxl-8 col-xl-8 col-lg-6 col-md-8 col-sm-8 col-xs-12 border mt-5 mb-5 pt-5 pb-5">
+                    <div class="bloque mb-5" id="datosBasicos">
+                        <div class="row">
+                            <h3 class="col-12 text-center mb-4"> Creador de productos </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <form class="col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12 mt-4">
+                                    <div class="mb-4 row d-flex justify-content-center">
+                                        <div class="col-12 ">
+                                            <input type="text" class="  form-control form-control-lg rounded-0"
+                                                id="nombreProducto" placeholder="Nombre" maxlength="60">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control form-control-lg rounded-0"
+                                                id="precioProducto" placeholder="Precio" maxlength="60">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control form-control-lg rounded-0"
+                                                id="categoriaProducto" placeholder="Categoria" maxlength="60">
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 row">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control form-control-lg rounded-0"
+                                                id="marcaProducto" placeholder="Marca" maxlength="60">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control form-control-lg rounded-0"
+                                                id="codigoProducto" placeholder="Codigo" maxlength="60">
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-5 ">
+                                            <button type="submit" class="btn btn-dark rounded-0 "><a
+                                                    class="text-decoration-none text-reset" href="">CREAR </a></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="col-12 card mb-0 mt-3 text-start border-end-0 border-start-0 border-top-0"
             id="titulosProductosNuevos">
 
@@ -328,114 +378,13 @@
 
         <section class="mt-0" id="productosNuevos">
 
-            <div class="row row-cols-2 row-cols-xxl-6 row-cols-xl-6 row-cols-lg-3 row-cols-md-3 row-cols-sm-3 g-2 mt-0">
+            <div class="row row-cols-2 row-cols-xxl-6 row-cols-xl-6 row-cols-lg-3 row-cols-md-3 row-cols-sm-3 g-2 mt-0"
+                id="contenedorProductos">
 
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="./assets/images/productosNuevos/productoNuevo1.jpg"
-                            class="card-img-top ratio ratio-1x1" alt="Producto Nuevo 1">
-                        <div class="card-body text-center mb-0 mt-0">
-                            <p class="card-text mb-2">
-                                ZOTAC GEFORCE RTX 2060 ZT-T20600H-10M
-                            </p>
-                            <h6 class="card-text mt-0 fw-bold">
-                                USD 619,00
-                            </h6>
+            </div>
 
-                        </div>
-                        <div class="card-footer text-center border-0">
-                            <a href="#titulosProductosNuevos" class="btn ">Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="./assets/images/productosNuevos/productoNuevo2.jpg"
-                            class="card-img-top ratio ratio-1x1" alt="Producto Nuevo 2">
-                        <div class="card-body text-center mb-0 mt-0">
-                            <p class="card-text mb-2">
-                                AMD PROCESADOR RYZEN 5 5600
-                            </p>
-                            <h6 class="card-text mt-0 fw-bold">
-                                USD 224,00
-                                </h5>
-                        </div>
-                        <div class="card-footer text-center border-0">
-                            <a href="#titulosProductosNuevos" class="btn ">Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 ">
-                        <img src="./assets/images/productosNuevos/productoNuevo3.jpg"
-                            class="card-img-top ratio ratio-1x1" alt="Producto Nuevo 3">
-                        <div class="card-body text-center mb-0 mt-0">
-                            <p class="card-text mb-2">
-                                GIGABYTE PLACA A520M-H
-                            </p>
-                            <h6 class="card-text mt-0 fw-bold">
-                                USD 98,00
-                            </h6>
-                        </div>
-                        <div class="card-footer text-center border-0">
-                            <a href="#titulosProductosNuevos" class="btn ">Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="./assets/images/productosNuevos/productoNuevo4.jpg"
-                            class="card-img-top ratio ratio-1x1" alt="Producto Nuevo 4">
-                        <div class="card-body text-center mb-0 mt-0">
-                            <p class="card-text mb-2">NETAC MEMORIA SHADOW DDR4-3200 16GB GREY
-                                NTSDD4P32SP-16E
-                            </p>
-                            <h6 class="card-text mt-0 fw-bold">
-                                USD 55,00
-                                </h5>
-                        </div>
-                        <div class="card-footer text-center border-0">
-                            <a href="#titulosProductosNuevos" class="btn ">Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="./assets/images/productosNuevos/productoNuevo5.jpg"
-                            class="card-img-top ratio ratio-1x1" alt="Producto Nuevo 5">
-                        <div class="card-body text-center mb-0 mt-0">
-                            <p class="card-text mb-2">GIGABYTE FUENTE 1000W GP-P1000GM 80 PLUS GOLD
-                            </p>
-                            <h6 class="card-text mt-0 fw-bold">
-                                USD 208,00
-                            </h6>
-                        </div>
-                        <div class="card-footer text-center border-0">
-                            <a href="#titulosProductosNuevos" class="btn ">Añadir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0">
-                        <img src="./assets/images/productosNuevos/productoNuevo6.jpg"
-                            class="card-img-top ratio ratio-1x1" alt="Producto Nuevo 6">
-                        <div class="card-body text-center mb-0 mt-0">
-                            <p class="card-text mb-2">WESTERN DIGITAL SSD M.2 BLACK NVME SN750 SE 1TB
-                            </p>
-                            <h6 class="card-text mt-0 fw-bold">
-                                USD 157,00
-                            </h6>
-                        </div>
-                        <div class="card-footer text-center border-0">
-                            <a href="#titulosProductosNuevos" class="btn ">Añadir</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row row-cols-2 row-cols-xxl-6 row-cols-xl-6 row-cols-lg-3 row-cols-md-3 row-cols-sm-3 g-2 mt-0"
+                id="creadorAdmin">
 
             </div>
 
@@ -536,8 +485,10 @@
     <script>
         AOS.init()
     </script>
-    <script src="./js/app.js"></script>
     <script src="./js/usuarios.js"></script>
+    <script src="./js/variablesGlobales.js"></script>
+    <script src="./js/sesion.js"></script>
+    <script src="./js/productos.js"></script>
 
 </body>
 

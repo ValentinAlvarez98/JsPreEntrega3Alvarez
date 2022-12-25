@@ -290,7 +290,8 @@
                         </div>
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center">
-                                <form class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-xs-12 mt-4">
+                                <form class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-xs-12 mt-4"
+                                    id="formularioIngreso">
                                     <div class="mb-1">
                                         <input type="email" class="form-control form-control-lg rounded-0 enter"
                                             id="emailUsuarioInicio" placeholder="E-MAIL" maxlength="60">
@@ -304,12 +305,12 @@
                                     </div>
                                     <p class="hidden" id="passwordVaciaInicio">Contraseña no puede estar vacia</p>
                                     <div class="mb-2 mt-4">
-                                        <button type="submit" class="col-12 btn btn-dark rounded-0 enter"><a
-                                                class="text-decoration-none text-reset" ">INICIAR </a></button>
+                                        <button type="submit" class="col-12 btn btn-dark rounded-0"><a
+                                                class="text-decoration-none text-reset">INICIAR </a></button>
                                     </div>
                                     <p class=" hidden" id="usuarioNoExiste">El usuario ingresado no existe</p>
-                                                <p class="hidden" id="incorrectosInicio">E-MAIL o contraseña incorrectos
-                                                </p>
+                                    <p class="hidden" id="incorrectosInicio">E-MAIL o contraseña incorrectos
+                                    </p>
                                 </form>
                             </div>
                         </div>
@@ -335,7 +336,8 @@
 
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center ">
-                                <form class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-xs-12 mt-4">
+                                <form class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-xs-12 mt-4"
+                                    id="formularioRegistro">
                                     <div class="mb-1">
                                         <input type="email" class="form-control form-control-lg rounded-0 enter"
                                             id="emailRegistro" placeholder="E-MAIL" maxlength="60">
@@ -356,7 +358,7 @@
                                     <p class="hidden" id="usuarioExisteRegistro">El usuario ya existe</p>
 
                                     <div class="mb-2 mt-4">
-                                        <button type="submit" class="col-12 btn btn-dark rounded-0 enter"><a
+                                        <button type="submit" class="col-12 btn btn-dark rounded-0"><a
                                                 class="text-decoration-none text-reset">
                                                 ENVIAR</a></button>
                                     </div>
@@ -472,8 +474,12 @@
     <script>
         AOS.init()
     </script>
-    <script src="../js/app.js"></script>
     <script src="../js/usuarios.js"></script>
+    <script src="../js/variablesGlobales.js"></script>
+    <script src="../js/sesion.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/registrar.js"></script>
+    <script src="../js/iniciarSesion.js"></script>
 </body>
 
 </html>
