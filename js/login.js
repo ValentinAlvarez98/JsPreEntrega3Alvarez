@@ -24,7 +24,10 @@ function ejecutarConEnter() {
     [enter.forEach((cadaEnter, i) => {
         enter[i].addEventListener('keyup', function (e) {
             ingresar.classList.contains('hidden') === false ?
-                e.keyCode === 13 ? ingreso() : registro : null;
+                e.keyCode === 13 ? ingreso() : null :
+                registrar.classList.contains('hidden') === false ?
+                    e.keyCode === 13 ? registro() : null :
+            null;
         })
     })] :
 
@@ -37,7 +40,7 @@ function ingresarORegistro() {
     const bloque = document.querySelectorAll('.bloque');
     const btnAqui = document.querySelectorAll('.btnAqui');
 
-    window.location.pathname === ('/JsPreEntrega3Alvarez/pages/registro.html' /* '/pages/registro.html */) ?
+    window.location.pathname === ('/JsPreEntrega3Alvarez/pages/registro.html' /* '/pages/registro.html' */) ?
         [ingresar.classList.add('hidden')] :
         window.location.pathname === ('/JsPreEntrega3Alvarez/pages/ingreso.html' /* '/pages/ingreso.html' */) ?
             [registrar.classList.add('hidden')] :

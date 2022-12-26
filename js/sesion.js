@@ -32,27 +32,28 @@ function sesion() {
         }
     }
 
+    function admin() {
 
     let existeAdmin = JSON.parse(localStorage.getItem('admin@banifox.com.uy'), usuarioAdmin.emailUsuario && usuarioAdmin.passwordUsuario);
-
-    console.log(existeAdmin);
-
-    let usuarioActivo = {
-        emailUsuario: JSON.parse(sessionStorage.getItem('Usuario Activo'))[0].emailUsuario,
-        passwordUsuario: JSON.parse(sessionStorage.getItem('Usuario Activo'))[0].passwordUsuario
-    };
-
-    console.log(usuarioActivo);
-
-    let comparadorAdmin = `${existeAdmin.emailUsuario}` === `${usuarioActivo.emailUsuario}`;
-
-    console.log(comparadorAdmin);
-
-    window.location.pathname === /* '/index.html' */ '/JsPreEntrega3Alvarez/index.html' ?
+        
+        JSON.parse(sessionStorage.getItem('Usuario Activo')) !== null ?
+            usuarioActivo = {
+                emailUsuario: JSON.parse(sessionStorage.getItem('Usuario Activo'))[0].emailUsuario,
+                passwordUsuario: JSON.parse(sessionStorage.getItem('Usuario Activo'))[0].passwordUsuario
+        }:
+        null;
+         
         `${existeAdmin.emailUsuario}` === `${usuarioActivo.emailUsuario}` ?
             creadorProductos.classList.remove('hidden') :
-            creadorProductos.classList.add('hidden') :
+            creadorProductos.classList.add('hidden');
+        null;
+
+    }
+
+    window.location.pathname === /* '/index.html' */ '/JsPreEntrega3Alvarez/index.html' ?
+        admin() :
     null;
+    
         
     cerrarSesion();
 

@@ -38,7 +38,6 @@ function registro() {
             emailUsuario: emailRegistro.toLowerCase(),
             passwordUsuario: passwordRegistro
         };
-
         
         let usuarioExiste = JSON.parse(localStorage.getItem(`${usuarioARegistrar.emailUsuario}`, usuarioARegistrar));
 
