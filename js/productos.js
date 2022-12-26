@@ -112,7 +112,6 @@ function mostrarProductos() {
 
 cargarProductos();
 mostrarProductos();
-console.log(productos);
 
 
 formularioAgregarProductos.addEventListener("submit", (e) => {
