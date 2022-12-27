@@ -1,7 +1,7 @@
 # JsPreEntrega3Alvarez
 Tercera pre-entrega para el curso de JavaScript de Coderhouse.
 
-## - Productos a crear con imágenes disponibles:
+## Productos a crear con imágenes disponibles:
 
 - Producto: (Nombre, Precio, Categoria, Marca, Código).
 
