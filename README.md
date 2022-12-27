@@ -3,7 +3,7 @@ Tercera pre-entrega para el curso de JavaScript de Coderhouse.
 
 - Productos disponibles para crear:
 
-##Producto: (Nombre, precio, categoria, marca, código).
+## Producto: (Nombre, precio, categoria, marca, código).
 
 Producto("ZOTAC GEFORCE RTX 2060", 619, "TARJETAS DE VIDEO", "NVIDIA", "BFXZON02")
 Producto("AMD PROCESADOR RYZEN 5 5600", 224, "PROCESADORES", "AMD", "BFX56")
