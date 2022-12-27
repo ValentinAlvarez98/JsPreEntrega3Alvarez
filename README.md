@@ -3,7 +3,8 @@ Tercera pre-entrega para el curso de JavaScript de Coderhouse.
 
 ## Productos a crear con imágenes disponibles:
 
-- Producto: (Nombre, Precio, Categoria, Marca, Código).
+### Formato: 
+Producto: (Nombre, Precio, Categoria, Marca, Código).
 
 - Producto("ZOTAC GEFORCE RTX 2060", 619, "TARJETAS DE VIDEO", "NVIDIA", "BFXZON02")
 - Producto("AMD PROCESADOR RYZEN 5 5600", 224, "PROCESADORES", "AMD", "BFX56")
