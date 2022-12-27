@@ -1,6 +1,11 @@
 # JsPreEntrega3Alvarez
 Tercera pre-entrega para el curso de JavaScript de Coderhouse.
 
+## Usuario ADMIN (para poder crear y eliminar productos)
+
+- Email: admin@banifox.com.uy
+- Contraseña: admin123
+
 ## Productos a crear con imágenes disponibles:
 
 ### Formato: 
